@@ -84,11 +84,6 @@ header h1 {
     font-weight: 500;
 }
 
-.checkin-btn.submitted {
-    background-color: #22c55e;
-    cursor: not-allowed;
-}
-
 .overview {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -171,7 +166,89 @@ header h1 {
     text-align: right;
 }
 
-/* Modal de Check-in */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card h4 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.project-card-desc {
+    color: #6b7280;
+    font-size: 14px;
+    flex-grow: 1;
+}
+
+.project-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.status-done { color: green; }
+.status-progress { color: blue; }
+.status-pending { color: grey; }
+.status-delayed { color: red; }
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.team-member img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.team-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.team-card h3 { margin: 0; }
+.team-card p { margin: 5px 0; color: #6b7280; }
+.project-link { font-size: 14px; }
+
 .modal {
     display: none;
     position: fixed;
