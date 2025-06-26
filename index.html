@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOnTime - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">DevOnTime</div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Dashboard</a></li>
+                    <li><a href="projeto-detalhes.html">Projetos</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="#">Alertas</a></li>
+                    <li><a href="#">Relatórios</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Dashboard Principal</h1>
+                <button class="checkin-btn" onclick="openModal()">Fazer Check-in Diário</button>
+            </header>
+            <section class="overview">
+                <div class="card">
+                    <h4>Progresso Geral</h4>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%;">45%</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <h4>Tarefas Concluídas</h4>
+                    <p class="big-number">11</p>
+                </div>
+                <div class="card">
+                    <h4>Alertas de Risco</h4>
+                    <p class="big-number">2</p>
+                </div>
+            </section>
+            <section class="projects-list">
+                <h2>Status dos Projetos</h2>
+                <div class="project-item">
+                    <div class="project-name">Sistema de Gestão</div>
+                    <div class="project-status risk-low">Risco Baixo</div>
+                    <div class="project-deadline">Entrega: 30/06/2025</div>
+                    <a href="projeto-detalhes.html" class="details-link">Ver Detalhes</a>
+                </div>
+                <div class="project-item">
+                    <div class="project-name">Aplicativo Móvel</div>
+                    <div class="project-status risk-high">Risco Alto</div>
+                    <div class="project-deadline">Entrega: 15/07/2025</div>
+                     <a href="projeto-detalhes.html" class="details-link">Ver Detalhes</a>
+                </div>
+                <div class="project
