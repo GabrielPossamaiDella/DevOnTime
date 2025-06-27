@@ -26,7 +26,7 @@
         <main class="main-content">
             <header>
                 <h1>Dashboard Principal</h1>
-                <button class="checkin-btn" onclick="openModal()">Fazer Check-in Diário</button>
+                <button class="checkin-btn" id="daily-checkin-btn">Fazer Check-in Diário</button>
             </header>
             <section class="overview">
                 <div class="card">
@@ -41,7 +41,7 @@
                 </div>
                 <div class="card">
                     <h4>Alertas de Risco</h4>
-                    <p class="big-number">2</p>
+                    <p class="big-number" id="risk-alerts-count">2</p>
                 </div>
             </section>
             <section class="projects-list">
@@ -69,17 +69,17 @@
     </div>
     <div id="checkin-modal" class="modal">
         <div class="modal-content">
-            <span class="close-button" onclick="closeModal()">&times;</span>
+            <span class="close-button">&times;</span>
             <h2>Check-in Diário</h2>
-            <form onsubmit="event.preventDefault()">
+            <form id="checkin-form">
                 <label for="today-work">Descreva o que fez hoje:</label>
-                <textarea id="today-work" rows="4"></textarea>
+                <textarea id="today-work" rows="4" required></textarea>
                 <label for="impediments">Tem impedimentos?</label>
-                <input type="text" id="impediments">
+                <input type="text" id="impediments-input">
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </div>
-    <script src="/script.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
